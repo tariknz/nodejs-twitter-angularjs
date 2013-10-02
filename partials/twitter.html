@@ -1,0 +1,38 @@
+<div class="container twitter-container">
+	<div class="twit-container">
+		<div>
+			<div class="row">
+				<div class="span12">
+					<h4>Twitter (preview)</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span12">
+					<div class="form-inline">
+						<input type="text" class="span4" ng-model="searchTerm" />
+						<button class="btn" ng-click="stream()">Stream</button>
+						<button class="btn" ng-click="search()">Search</button>
+						<p class="help-inline">{{status}}</p>
+						<img src="img/loader.gif" class="loader-icon" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span12">
+				<br /><br />
+				<div class="tweets">
+					<ul class="tweets-list" ng-repeat="tweet in tweets"  ng-animate="'animate'">
+						<li class="tweet">
+							<div class="row">
+								<div class="span pull-left no-space"><img class="" ng-src="{{tweet.user.profile_image_url}}" /></div>
+								<div class="span10"><strong>{{tweet.user.name}}: </strong>{{tweet.text}}</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

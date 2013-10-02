@@ -1,0 +1,167 @@
+/* app css stylesheet */
+
+[ng-cloak] {
+	display: none;
+}
+
+body {
+	background-image: url(../img/bg.png);
+	background-color: #333
+}
+
+.footer, .menu {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.footer {
+	 position:fixed;
+	 bottom:0;
+
+}
+
+.tweets-list{
+	list-style: none;
+	padding-left: 0;
+}
+
+.twitter-container {
+	background-color: #fff;
+	padding: 20px;
+     margin-top: 30px;
+}
+
+.no-space{
+	margin-left: 0;
+}
+
+.build-code.alpha {
+	color: red;
+}
+
+
+/* animation for enter and leave */
+.animate-enter {
+    -webkit-animation: enter 325ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation: enter 325ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    display: block;
+    position: relative;
+}
+@-webkit-keyframes enter {
+    from {
+        opacity: 0;
+        height: 0px;
+    }
+    20% {
+        opacity: .5;
+    }
+    40% {
+        opacity: .15;
+        color: red;
+    }
+    60% {
+        opacity: .75;
+    }
+    80% {
+        opacity: .3;
+    }
+    to {
+        opacity: 1;
+        height: 30px;
+    }
+}
+@keyframes enter {
+    from {
+        opacity: 0;
+        height: 0px;
+    }
+    20% {
+        opacity: .5;
+    }
+    40% {
+        opacity: .15;
+        color: red;
+    }
+    60% {
+        opacity: .75;
+    }
+    80% {
+        opacity: .3;
+    }
+    to {
+        opacity: 1;
+        height: 30px;
+    }
+}
+
+.animate-leave {
+    -webkit-animation: leave 325ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation: leave 325ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    display: block;
+    position: relative;
+}
+@-webkit-keyframes leave {
+    to {
+        opacity: 0;
+        height: 0px;
+    }
+    80% {
+        opacity: .25;
+    }
+    60% {
+        opacity: .10;
+        color: red;
+    }
+    40% {
+        opacity: .5;
+    }
+    20% {
+        opacity: .30;
+    }
+    from {
+        opacity: 1;
+        height: 30px;
+    }
+}
+@keyframes leave {
+    to {
+        opacity: 0;
+        height: 0px;
+    }
+    80% {
+        opacity: .25;
+    }
+    60% {
+        opacity: .10;
+        color: red;
+    }
+    40% {
+        opacity: .5;
+    }
+    20% {
+        opacity: .30;
+    }
+    from {
+        opacity: 1;
+        height: 30px;
+    }
+}
+
+/* end animation */
+
+
+.loader-icon {
+	margin-left: 20px;
+	display: none;
+}
+
+.container {
+	-webkit-box-shadow: inset 1px 1px 23px 2px rgba(0,0,0,0.26);
+	-moz-box-shadow: inset 1px 1px 23px 2px rgba(0,0,0,0.26);
+	box-shadow: inset 1px 1px 23px 2px rgba(0,0,0,0.26);
+}
+
+.twit-container {
+	padding-left: 10px;
+}
