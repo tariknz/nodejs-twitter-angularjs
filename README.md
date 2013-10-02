@@ -1,7 +1,11 @@
 Setup
 =====
 
-Install the required modules in npm
+1. Install NodeJS (if you don't have it)
+
+	nodejs.org
+
+2. Install the required modules in npm
 
     npm install ntwitter
     npm install socket.io
@@ -19,6 +23,8 @@ If you are using windows, just run the batch file. Else:
 
     nodejs twitter-stream.js
 
+
+The default URL should be http://localhost:3000/
 
 
 Screenshot
