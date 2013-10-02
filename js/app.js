@@ -8,7 +8,7 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
 		$routeProvider
 		.when('/',
 			{
-				templateUrl: '/query/partials/twitter.html',
+				templateUrl: '/partials/twitter.html',
 				controller: 'TwitterCtrl'
 			}
 		)
